@@ -1,13 +1,12 @@
 name: Copy folder to other branch
-
 on: 
   push:
-	  branches:
-		  - master
-		paths:
-		  # Only rebuild website when docs have changed
-		  # Comment out when testing locally via act!
-		  - 'docs01/**'
+    branches:
+    - master
+    paths:
+    # Only rebuild website when docs have changed
+    # Comment out when testing locally via act!
+    - 'docs01/**'
 
 jobs:
   copy:
