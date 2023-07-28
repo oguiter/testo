@@ -42,6 +42,15 @@ jobs:
       - name: Run pdf script
         run: node docs/misc/pdf.js http://localhost:8000/print_page/ iowa_documentation_v0.0.pdf 'iowa documentation v0.0'
         #run: node docs/misc/pdf.js http://localhost:8000/print_page/ iowa_documentation_v${{ inputs.VERSION }}.pdf 'iowa documentation v${{ inputs.VERSION }}'
+        
+      - name: Commit and push
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: '["iowa_documentation_v0.0.pdf"]'
+          message: 'My commit message'
+          push: true
+
+        # Upload the file to Artifact
       - uses: actions/upload-artifact@v3
         with:
           name: iowa_documentation_v0.0.pdf
