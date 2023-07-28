@@ -44,5 +44,5 @@ jobs:
         #run: node docs/misc/pdf.js http://localhost:8000/print_page/ iowa_documentation_v${{ inputs.VERSION }}.pdf 'iowa documentation v${{ inputs.VERSION }}'
       - uses: actions/upload-artifact@v3
         with:
-          name: iowa_documentation_v${{ inputs.VERSION }}.pdf
-          path: iowa_documentation_v${{ inputs.VERSION }}.pdf
+          name: iowa_documentation_v0.0.pdf
+          path: iowa_documentation_v0.0.pdf
