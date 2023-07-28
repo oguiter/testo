@@ -3,7 +3,7 @@ name: Copy folder to other branch
 on: 
   push:
     branches:
-    - master
+    - main
     paths:
     # Only rebuild website when docs have changed
     # Comment out when testing locally via act!
