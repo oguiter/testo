@@ -1,11 +1,19 @@
 name: Generate documentation PDF (REUSABLE)
 
+# on:
+#  workflow_call:
+#    inputs:
+#      VERSION:
+#        required: true
+#        type: string
 on:
-  workflow_call:
-    inputs:
-      VERSION:
-        required: true
-        type: string
+  push:
+    branches:
+    - main
+    paths:
+    # Only rebuild website when docs have changed
+    # Comment out when testing locally via act!
+    - 'docs01/**'
 
 jobs:
   build:
