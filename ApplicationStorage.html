@@ -1,5 +1,3 @@
-<!-- Custom HTML site displayed as the Home chapter -->
-
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -11,15 +9,17 @@
       
       
       
+        <link rel="prev" href="Streamable.html">
       
-        <link rel="next" href="GettingStarted.html">
+      
+        <link rel="next" href="Network.html">
       
       <link rel="icon" href="images/iowa_logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>Home - IOWA SDK Reference</title>
+        <title>Application Storage - IOWA SDK Reference</title>
       
     
     
@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#application-storage" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Application Storage
             
           </span>
         </div>
@@ -178,12 +183,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="index.html" class="md-tabs__link md-tabs__link--active">
+    <a href="index.html" class="md-tabs__link">
       Home
     </a>
   </li>
@@ -208,13 +211,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="LwM2MOverview.html" class="md-tabs__link">
+      <a href="LwM2MOverview.html" class="md-tabs__link md-tabs__link--active">
         User Manual
       </a>
     </li>
@@ -263,282 +268,8 @@
     <div class="md-container" data-md-component="container">
       
       
-
         
       
-<style>
-
-    .md-main {
-        flex-grow: 0
-    }
-
-    .md-main__inner {
-        display: flex;
-        height: 100%;
-    }
-
-    .tx-container {
-        padding-top: .0rem;
-        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)
-    }
-
-    .tx-hero {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-    }
-
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor;
-        font-weight: 700
-    }
-
-    .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
-    }
-
-    .tx-hero__image{
-        width:17rem;
-        height:17rem;
-        order:1;
-        padding-right: 2.5rem;
-    }
-
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
-    }
-
-    .feature-item h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
-    }
-
-    .top-hr {
-        margin-top: 42px;
-    }
-
-    .feature-item {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        padding: 0 15px;
-        word-break: break-word
-    }
-
-    .feature-item h2 {
-        color: #333;
-        font-weight: 300;
-        font-size: 25px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: inherit;
-    }
-
-    .feature-item p {
-        font-size: 16px;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        color: #111;
-        margin: 0 0 10px;
-        display: block;
-    }
-
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem
-        }
-    }
-
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none
-        }
-
-        .tx-hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tx-hero__content {
-            max-width: 22rem;
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: center;
-        }
-    }
-
-    @media screen and (min-width:76.25em) {
-        .md-sidebar--primary {
-            display: none
-        }
-
-        .top-hr {
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .bottom-hr {
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .feature-item {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .feature-item:hover {
-            background-color: #526cfe47;
-            border-radius: 3px;
-        }
-    }
-
-    .hr {
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .text-center {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15px;
-        font-family: 'Lato', sans-serif;
-        font-size: 23px;
-        font-weight: 300;
-        padding-bottom: 10px;
-    }
-
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 0 auto;
-    }
-
-    .logos img {
-        flex: 1 1 auto;
-        padding: 25px;
-        max-height: 130px;
-        vertical-align: middle;
-    }
-
-    .hr-logos {
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .md-footer-social {
-        padding-top: 20px;
-    }
-</style>
-
-<!-- Main site Entry button descriptions -->
-<section class="tx-container">
-    <div class="md-grid md-typeset">
-      <div class="tx-hero">
-        <div class="tx-hero__image">
-          <img src="assets/images/iowa_image.png" draggable="false">
-        </div>
-        <div class="tx-hero__content">
-          <h1> IOWA Device Management SDK </h1>
-          <p><h2>Fast-Track Your IoT Projects with IOWA</h2></p>
-          <p><h3>is an award-winning software development kit (SDK) dedicated to helping organizations build efficient IoT device management solutions faster than ever. </h3></p>
-          <a href="GettingStarted.html" title="Installation" class="md-button md-button--primary">
-            Get started
-          </a>
-          <a href="https://github.com/ioterop/IOWA" title="" class="md-button">
-            Go to GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-</section>
-
-<!-- Main site box descriptions -->
-<div class="top-hr">
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M15 17v-3h3v-2l4 3.5-4 3.5v-2h-3m2 1v3h-3v2l-4-3.5 4-3.5v2h3M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m9.66-5.27l-2-3.46c-.12-.22-.38-.31-.61-.22l-2.49 1c-.51-.41-1.06-.74-1.69-1l-.37-2.63A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.26-1.17.59-1.69 1L5 5.05c-.23-.09-.5 0-.61.22l-2 3.46c-.13.21-.08.49.11.64L4.57 11l-.07 1 .07 1-2.11 1.63c-.2.15-.25.43-.12.64l2 3.46c.11.27.4.38.66.27l2.5-1c.24.19.5.37.76.53l1.65-1.4c-.77-.33-1.45-.82-2-1.45l-2.41 1-.77-1.3L6.8 13.8a5.55 5.55 0 010-3.6L4.69 8.65l.75-1.3 2.41 1c.78-.9 1.83-1.53 3-1.78l.4-2.57h1.5l.37 2.62c1.17.24 2.22.88 3 1.77l2.41-1 .75 1.3-2.08 1.51c.09.26.16.53.2.8h2l2.1-1.63a.48.48 0 00.16-.64M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m0-6c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2z" />
-            </svg>
-            Latest technology
-        </h2>
-        <p>Our products contain the latest updates of the LwM2M standard. </p>
-    </div>
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
-            </svg>Visionary partner
-        </h2>
-        <p>We contribute to a standard that will move IoT to massive IoT. </p>
-    </div>
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
-            Deep industry insights
-        </h2>
-        <p>We partner with companies like Qualcomm, Verizon, and more to define the LwM2M specification. </p>
-    </div>
-</div>
-
-<div class="top-hr">
-    <div class="hr">
-    </div>
-</div>
-
-
-
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -582,19 +313,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         Home
       </a>
-      
     </li>
   
 
@@ -738,14 +461,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -782,7 +507,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           User Manual
@@ -905,11 +630,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="ApplicationStorage.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="ApplicationStorage.html" class="md-nav__link md-nav__link--active">
         Application Storage
       </a>
+      
     </li>
   
 
@@ -2252,6 +1987,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -2263,6 +2000,70 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+
+
+
+
+                  
+
+
+<h1 id="application-storage">Application storage</h1>
+<!-- BEGIN INCLUDE ./header_eval.md -->
+<div class="admonition note">
+<p class="admonition-title">Feature not available on evaluation version <img alt="🔒" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f512.png" title=":lock:" /></p>
+<p>The IOWA Evaluation version includes basic features and you can test your code against LwM2M servers (like <a href="https://alaska.ioterop.com/login">IoTerop's ALASKA server</a>).</p>
+<p>To get access to the full power of the <a href="https://ioterop.com/iowa/">IOWA Full SDK</a>, please <a href="https://info.ioterop.com/contact-products">Contact us</a></p>
+</div>
+<!-- END INCLUDE -->
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://ioterop.com/contact" target="_blank" rel="noopener">feedback form</a>.    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+
               </article>
             </div>
           
@@ -2270,6 +2071,70 @@
         </div>
         
       </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020-<script>document.write(new Date().getFullYear())</script> IoTerop
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://ioterop.com/" target="_blank" rel="noopener" title="Website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m57.7 193 9.4 16.4c8.3 14.5 21.9 25.2 38 29.8l57.9 16.5c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6 16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5 4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5.3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3-92.8 0-171.5 60.9-198.2 145zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/ioterop/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/IOTEROP" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/ioteropcompany" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:contact@ioterop.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
       
     </div>
     <div class="md-dialog" data-md-component="dialog">
